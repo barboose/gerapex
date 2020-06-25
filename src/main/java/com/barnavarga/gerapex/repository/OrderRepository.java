@@ -12,7 +12,6 @@ import java.util.List;
  * @author bvarga and created on 2020. 06. 25..
  */
 @Repository
-//@SessionScope
 public class OrderRepository<ItemType extends Item> implements Serializable
 {
 	private List<Order<ItemType>> orders = new LinkedList<>();
