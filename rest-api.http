@@ -1,0 +1,59 @@
+GET http://localhost:8080/orders
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/orders
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "@type": "pharmacy",
+  "paymentMethod": "CASH",
+  "rewardCardNumber": "BBB999AAA",
+  "buyer": {
+    "name": "Test Pharmacy Buyer",
+    "email": "test.buyer@gerapex",
+    "phoneNumber": "+1-202-555-0146",
+    "address": "672 Desota Pl, Pontiac, MI, 48342"
+  },
+  "items": [
+    {
+      "name": "Distilled water",
+      "quantity": 0.5,
+      "unit": "litre"
+    }
+  ]
+}
+
+###
+
+POST http://localhost:8080/orders
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "@type": "food-delivery",
+  "paymentMethod": "CASH",
+  "couponCode": "123-456-789",
+  "buyer": {
+    "name": "Food Buyer",
+    "email": "food.buyer@gerapex",
+    "phoneNumber": "(937) 843-4192",
+    "address": "14612 Harvard St, Dolton, IL, 60419"
+  },
+  "items": [
+    {
+      "name": "Hawaii Pizza 32cm",
+      "quantity": 1,
+      "unit": "pc",
+      "comment": "Without Ananas"
+    }
+  ]
+}
+
+###

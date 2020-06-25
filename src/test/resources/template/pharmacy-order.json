@@ -1,0 +1,18 @@
+{
+  "@type": "pharmacy",
+  "paymentMethod": "CASH",
+  "rewardCardNumber": "BBB999AAA",
+  "buyer": {
+    "name": "Test Pharmacy Buyer",
+    "email": "test.buyer@gerapex",
+    "phoneNumber": "+1-202-555-0146",
+    "address": "672 Desota Pl, Pontiac, MI, 48342"
+  },
+  "items": [
+    {
+      "name": "Distilled water",
+      "quantity": 0.5,
+      "unit": "litre"
+    }
+  ]
+}
